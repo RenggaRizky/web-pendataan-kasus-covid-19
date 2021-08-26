@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import "bootstrap";
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 90%;
+
+  .hero {
+    height: 100vh;
+  }
+
+  .data-list {
+    .country-info {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+
+    <main>
+      <div class="hero d-flex flex-column justify-content-center">
+        <h1 class="display-6 text-center mb-5 fw-normal">
+          Menyajikan Data Akurat Kasus COVID-19 <br />
+          Di Seluruh Dunia
+        </h1>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Cari Negara" aria-label="Recipient's username" aria-describedby="button-addon2" id="searchBar" />
+          <button class="btn btn-outline-secondary" type="button" id="searchBtn"><i class="fas fa-search" id="iconSearchBtn"></i></button>
+        </div>
+      </div>
+
+      <cases-data></cases-data>
+      <!-- <div class="data-list">
+        <div class="country-info mb-5">
+          <h3 class="country-name fw-light">Afghanistan<span class="country-code">(AFG)</span></h3>
+          <p class="country-region fs-5">Asia</p>
+        </div>
+        <div class="data-item d-flex flex-column">
+          <div class="all-cases-data text-center d-flex flex-column justify-content-around mb-5">
+            <div class="data-cases mb-2">
+              <h5 class="data-title fw-light">Kasus</h5>
+              <p class="qty display-3">152822</p>
+            </div>
+            <div class="data-deaths mb-2">
+              <h5 class="data-title fw-light">Meninggal</h5>
+              <p class="qty display-3">7093</p>
+            </div>
+            <div class="data-recovered mb-2">
+              <h5 class="data-title fw-light">Sembuh</h5>
+              <p class="qty display-3">109036</p>
+            </div>
+          </div>
+
+          <div class="all-cases-today text-center d-flex flex-column justify-content-around mb-5">
+            <div class="today-cases mb-2">
+              <h5 class="data-title fw-light">Kasus<br />Hari Ini</h5>
+              <p class="qty display-3">0</p>
+            </div>
+            <div class="today-deaths mb-2">
+              <h5 class="data-title fw-light">Meninggal<br />Hari Ini</h5>
+              <p class="qty display-3">0</p>
+            </div>
+            <div class="today-recovered mb-2">
+              <h5 class="data-title fw-light">Sembuh<br />Hari Ini</h5>
+              <p class="qty display-3">0</p>
+            </div>
+          </div>
+
+          <div class="actived-and-tested-cases text-center d-flex flex-column justify-content-around mb-5">
+            <div class="actived-cases">
+              <h5 class="data-title fw-light">Aktif</h5>
+              <p class="qty display-3">36693</p>
+            </div>
+            <div class="tested-cases">
+              <h5 class="data-title fw-light">Sudah di Tes</h5>
+              <p class="qty display-3">749704</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </main>
+
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
