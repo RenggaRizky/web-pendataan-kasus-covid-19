@@ -6,29 +6,14 @@ function main() {
   const searchBtn = document.querySelector("#searchBtn");
   const casesData = document.querySelector("cases-data");
 
-  // searchBtn.addEventListener("click", function () {
-  //   DataSource.searchCountry(searchBar.value);
-
-  // });
-
-  const buttonEventListener = async () => {
+  searchBtn.addEventListener("click", async () => {
     try {
       const result = await DataSource.searchCountry(searchBar.value);
-      renderResult(result);
+      casesData.information = result;
     } catch {
-      fallbackResult();
+      casesData.renderError();
     }
-  };
-
-  const renderResult = (results) => {
-    casesData.information = results;
-  };
-
-  const fallbackResult = () => {
-    casesData.renderError();
-  };
-
-  searchBtn.addEventListener("click", buttonEventListener);
+  });
 }
 
 export default main;

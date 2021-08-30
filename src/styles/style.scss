@@ -1,21 +1,161 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import "bootstrap";
+@import "font";
 
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i {
+  color: $light;
+}
+
+main {
   margin: 0 auto;
   width: 90%;
 
   .hero {
     height: 100vh;
+
+    .hero-title {
+      font-size: $font-size-3;
+      font-weight: $font-weight-1;
+    }
+
+    .hero-desc {
+      font-size: $font-size-7;
+      font-weight: $font-weight-5;
+    }
   }
 
-  .data-list {
+  cases-data {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+
     .country-info {
-      text-align: center;
+      h3 {
+        font-size: $font-size-4;
+        font-weight: $font-weight-2;
+      }
+    }
+
+    .cases-info {
+      flex-direction: column;
+      justify-content: space-between;
+      .data-title {
+        font-size: $font-size-5;
+        font-weight: $font-weight-4;
+      }
+
+      .qty {
+        font-size: $font-size-2;
+        font-weight: $font-weight-3;
+      }
+    }
+
+    .error-section {
+      .error-text {
+        font-size: $font-size-4;
+      }
+
+      #sadIcon {
+        font-size: $font-size-2;
+      }
+    }
+
+    .covid-desc-title {
+      font-size: $font-size-3;
+    }
+
+    .covid-desc-text {
+      font-size: $font-size-6;
+      text-align: justify;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    width: 85%;
+
+    .hero {
+      .hero-title {
+        font-size: $font-size-1;
+        font-weight: $font-weight-1;
+      }
+
+      .hero-desc {
+        font-size: $font-size-6;
+        font-weight: $font-weight-5;
+      }
+    }
+
+    .input-group {
+      margin: 0 auto;
+      width: 70%;
+    }
+
+    cases-data {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+
+      .country-info {
+        h3 {
+          font-size: $font-size-2;
+        }
+      }
+
+      .cases-info {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .data-cases,
+        .data-deaths,
+        .data-recovered,
+        .data-active {
+          width: 20%;
+        }
+
+        .data-title {
+          font-size: $font-size-4;
+        }
+
+        .qty {
+          font-size: $font-size-1;
+        }
+      }
+
+      .error-section {
+        #sadIcon {
+          font-size: $font-size-1;
+        }
+      }
+
+      .covid-desc-title {
+        font-size: $font-size-1;
+      }
+
+      .covid-desc-text {
+        font-size: $font-size-4;
+      }
     }
   }
 }
